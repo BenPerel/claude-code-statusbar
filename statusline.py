@@ -29,7 +29,7 @@ except Exception:
     branch = '?'
     git_status = ''
 
-print(f"\U0001f916 {model} | \U0001f4c1 {repo} | \U0001f33f {branch}{git_status}")
+print(f" \U0001f916 {model} | \U0001f4c1 {repo} | \U0001f33f {branch}{git_status}")
 
 # --- Line 2: Color-coded progress bar ---
 ctx = data.get('context_window', {})
@@ -103,4 +103,4 @@ token_info = f"{fmt_k(used_tokens)} / {fmt_k(total)} ({pct}%){warn} | {cost_str}
 print(f"{BORDER}\u256d{'─' * BAR_WIDTH}\u256e{RESET}")
 print(f"{BORDER}\u2502{RESET}{bar}{BORDER}\u2502{RESET}  {token_info}")
 print(f"{BORDER}\u2570{'─' * BAR_WIDTH}\u256f{RESET}")
-print(f"  {GREEN}\u25cf{RESET} 0-25%  {YELLOW}\u25cf{RESET} 25-50%  {ORANGE}\u25cf{RESET} 50-70%  {RED}\u25cf{RESET} 70-100%  {FREE_GRAY}\u25cf{RESET} Free  {AUTOCOMPACT}\u25cf{RESET} Autocompact")
+print(f" {GREEN}\u25cf{RESET} 0-25%  {YELLOW}\u25cf{RESET} 25-50%  {ORANGE}\u25cf{RESET} 50-70%  {RED}\u25cf{RESET} 70-100%  {FREE_GRAY}\u25cf{RESET} Free  {AUTOCOMPACT}\u25cf{RESET} Autocompact")
